@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "To cite this software, please use the metadata below."
+type: software
+title: "Rows Are Not Evidence Units: Evidence-Unit Invariance in Weak Temporal Localization"
+authors:
+  - family-names: "Peimani"
+    given-names: "Amir Reza"
+    affiliation: "University of Toronto"
+    email: "amir.peimani@utoronto.ca"
+repository-code: "https://github.com/AmirRezaPeimani/evidence-unit-invariance"
+url: "https://github.com/AmirRezaPeimani/evidence-unit-invariance"
+license: Apache-2.0

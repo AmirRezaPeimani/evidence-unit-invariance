@@ -42,7 +42,24 @@ do not train models or download datasets. See [REPRODUCING.md](REPRODUCING.md)
 for the examples, schema checks, and scope of full-experiment reproduction.
 Public datasets are not redistributed; see [DATA.md](DATA.md).
 
-## License
+## Citation and license
+
+Author: Amir Reza Peimani, University of Toronto
+
+Contact: [amir.peimani@utoronto.ca](mailto:amir.peimani@utoronto.ca)
+
+To cite this software:
+
+```bibtex
+@software{peimani_evidence_unit_invariance_2026,
+  author = {Peimani, Amir Reza},
+  title  = {Rows Are Not Evidence Units: Evidence-Unit Invariance in Weak Temporal Localization},
+  year   = {2026},
+  url    = {https://github.com/AmirRezaPeimani/evidence-unit-invariance}
+}
+```
+
+Citation metadata is also provided in [`CITATION.cff`](CITATION.cff).
 
 This project is licensed under the Apache License 2.0.
 See [`LICENSE`](LICENSE) for details.
