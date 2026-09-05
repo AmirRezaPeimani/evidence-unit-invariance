@@ -1,0 +1,40 @@
+{
+  "clean_evidence_classes": 286,
+  "clean_serialized_rows": 286,
+  "conditions": [
+    "clean",
+    "five_copy_range_materialization"
+  ],
+  "dataset": "daphnet",
+  "decoder": {
+    "merge_gap_bins": 0,
+    "minimum_duration_bins": 1,
+    "threshold": 0.5
+  },
+  "explicit_emission_identity": true,
+  "fitted_runs": 60,
+  "independent_groups": 10,
+  "learning_rate": 0.01,
+  "materialized_evidence_classes": 286,
+  "materialized_serialized_rows": 562,
+  "maximum_epochs": 25,
+  "model_seeds": [
+    1103,
+    2207,
+    3301
+  ],
+  "qualified_maximum_cardinality_segment_matching": true,
+  "raw_data_redistributed": false,
+  "representation_copies_inherit_parent_identity": true,
+  "schema_version": "evidence_unit_run_configuration_v1",
+  "selection": "weak validation only",
+  "task": {
+    "bin_seconds": 1.0,
+    "features": "mean and standard deviation of nine inertial channels",
+    "mean_truth_duration_seconds": 6.97,
+    "median_truth_duration_seconds": null,
+    "positive_frame_prevalence": 0.0962,
+    "positive_target": "label 2 freezing versus labels 1 and 2",
+    "truth_components": 236
+  }
+}

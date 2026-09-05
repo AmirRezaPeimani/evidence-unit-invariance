@@ -1,0 +1,2 @@
+truth_intervals,prediction_intervals,iou_matrix,maximum_total_iou_then_threshold_matches,qualified_maximum_cardinality_matches,qualified_total_iou,matched_truth_indices,matched_prediction_indices
+"[[4, 28], [29, 36], [46, 47]]","[[4, 10], [12, 36], [44, 67]]","[[0.25, 0.5, 0.0], [0.0, 0.2916666666666667, 0.0], [0.0, 0.0, 0.043478260869565216]]",0,1,0.5,[0],[1]

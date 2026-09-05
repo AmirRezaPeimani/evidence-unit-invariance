@@ -1,0 +1,7 @@
+dataset,condition,group_macro_segment_f1_iou_0p5_mean_weighted_minus_quotient,group_macro_frame_balanced_accuracy_mean_weighted_minus_quotient,group_macro_brier_mean_weighted_minus_quotient,group_macro_ece_10_mean_weighted_minus_quotient
+hapt,clean,0.0,0.0,0.0,0.0
+hapt,five_copy_range_materialization,0.0,4.20875420881206e-06,-1.1810234359921346e-07,2.0851256525566964e-07
+mhealth,clean,0.0,0.0,0.0,0.0
+mhealth,five_copy_range_materialization,0.0,0.0,-6.392313338932087e-07,3.037593617610801e-06
+synthetic,clean,0.0,0.0,0.0,0.0
+synthetic,five_copy_range_materialization,0.0,3.0040855558688406e-07,-2.0725917410091554e-07,-1.4210471135922553e-07

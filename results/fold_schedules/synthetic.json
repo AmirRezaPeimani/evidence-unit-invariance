@@ -1,0 +1,45 @@
+{
+  "folds": [
+    [
+      "synthetic_group_00",
+      "synthetic_group_05",
+      "synthetic_group_10",
+      "synthetic_group_15",
+      "synthetic_group_20",
+      "synthetic_group_25"
+    ],
+    [
+      "synthetic_group_01",
+      "synthetic_group_06",
+      "synthetic_group_11",
+      "synthetic_group_16",
+      "synthetic_group_21",
+      "synthetic_group_26"
+    ],
+    [
+      "synthetic_group_02",
+      "synthetic_group_07",
+      "synthetic_group_12",
+      "synthetic_group_17",
+      "synthetic_group_22",
+      "synthetic_group_27"
+    ],
+    [
+      "synthetic_group_03",
+      "synthetic_group_08",
+      "synthetic_group_13",
+      "synthetic_group_18",
+      "synthetic_group_23",
+      "synthetic_group_28"
+    ],
+    [
+      "synthetic_group_04",
+      "synthetic_group_09",
+      "synthetic_group_14",
+      "synthetic_group_19",
+      "synthetic_group_24",
+      "synthetic_group_29"
+    ]
+  ],
+  "identity_groups": 30
+}

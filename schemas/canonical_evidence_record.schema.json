@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:iclr2027:evidence-unit-invariance:canonical-record-schema",
+  "title": "Canonical evidence record",
+  "description": "Storage-metadata-free record emitted by the compiler Q.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "group_id",
+    "acquisition_id",
+    "source_id",
+    "annotation_type",
+    "support",
+    "payload",
+    "signal",
+    "validity_mask",
+    "lineage_scope",
+    "lineage_id"
+  ],
+  "properties": {
+    "group_id": {"type": "string", "minLength": 1},
+    "acquisition_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "annotation_type": {
+      "enum": [
+        "negative",
+        "positive_bag",
+        "timestamp",
+        "range",
+        "dense_fragment"
+      ]
+    },
+    "support": {
+      "type": "array",
+      "items": {"type": "integer", "minimum": 0},
+      "uniqueItems": true
+    },
+    "payload": {"type": "object"},
+    "signal": {
+      "type": "array",
+      "description": "Canonical inline signal payload for the evidence class."
+    },
+    "validity_mask": {
+      "type": "array",
+      "description": "Canonical inline validity payload for the evidence class."
+    },
+    "lineage_scope": {
+      "enum": ["statement", "session", "row"]
+    },
+    "lineage_id": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

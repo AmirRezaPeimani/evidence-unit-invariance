@@ -1,0 +1,5 @@
+dataset,clean_f1,materialized_f1,signed_response,scaler_unit,training_and_validation_risk_unit
+hapt,0.8308291475938182,0.7013346152255606,-0.1294945323682576,unique acquisition,serialized row
+mhealth,0.2638657931351168,0.1409078928126547,-0.12295790032246212,unique acquisition,serialized row
+synthetic,0.2628944288338208,0.2239524310565977,-0.0389419977772231,unique acquisition,serialized row
+ppg_dalia,0.3676137215610899,0.1384793311263899,-0.2291343904347,unique acquisition,serialized row

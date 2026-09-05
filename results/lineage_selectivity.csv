@@ -1,0 +1,3 @@
+method,row_count_shared,row_count_distinct,compiled_count_shared,compiled_count_distinct,objective_difference_distinct_minus_shared,maximum_parameter_difference,l2_parameter_difference,maximum_probability_difference,decoded_bins_changed,selected_checkpoint_shared,selected_checkpoint_distinct,realized_updates_shared,realized_updates_distinct,maximum_scaler_difference
+ordinary learning,7,7,7,7,0.0,0.0,0.0,0.0,0,20,20,25,25,0.0
+quotient learning,7,7,3,7,-0.020957350730895996,0.27075231075286865,4.567941188812256,0.23697695136070251,0,25,20,25,25,5.960464477539063e-08

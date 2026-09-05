@@ -1,0 +1,33 @@
+Test,Control ID,Family,Coverage,Expected,Observed,Result
+1,M-negative-2,Multiplicity idempotence,Negative; multiplicity 2,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+2,M-negative-3,Multiplicity idempotence,Negative; multiplicity 3,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+3,M-negative-5,Multiplicity idempotence,Negative; multiplicity 5,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+4,M-negative-10,Multiplicity idempotence,Negative; multiplicity 10,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+5,M-bag-2,Multiplicity idempotence,Positive bag; multiplicity 2,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+6,M-bag-3,Multiplicity idempotence,Positive bag; multiplicity 3,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+7,M-bag-5,Multiplicity idempotence,Positive bag; multiplicity 5,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+8,M-bag-10,Multiplicity idempotence,Positive bag; multiplicity 10,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+9,M-timestamp-2,Multiplicity idempotence,Timestamp; multiplicity 2,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+10,M-timestamp-3,Multiplicity idempotence,Timestamp; multiplicity 3,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+11,M-timestamp-5,Multiplicity idempotence,Timestamp; multiplicity 5,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+12,M-timestamp-10,Multiplicity idempotence,Timestamp; multiplicity 10,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+13,M-range-2,Multiplicity idempotence,Range; multiplicity 2,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+14,M-range-3,Multiplicity idempotence,Range; multiplicity 3,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+15,M-range-5,Multiplicity idempotence,Range; multiplicity 5,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+16,M-range-10,Multiplicity idempotence,Range; multiplicity 10,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+17,M-dense-2,Multiplicity idempotence,Dense fragment; multiplicity 2,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+18,M-dense-3,Multiplicity idempotence,Dense fragment; multiplicity 3,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+19,M-dense-5,Multiplicity idempotence,Dense fragment; multiplicity 5,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+20,M-dense-10,Multiplicity idempotence,Dense fragment; multiplicity 10,Exact loss and gradient,classes=2; loss diff=0.0; max grad diff=0.0,PASS
+21,R-negative,Reordering,Reorder Negative rows,Exact loss and gradient,loss diff=0.0; max grad diff=0.0,PASS
+22,R-bag,Reordering,Reorder Positive bag rows,Exact loss and gradient,loss diff=0.0; max grad diff=0.0,PASS
+23,R-timestamp,Reordering,Reorder Timestamp rows,Exact loss and gradient,loss diff=0.0; max grad diff=0.0,PASS
+24,R-range,Reordering,Reorder Range rows,Exact loss and gradient,loss diff=0.0; max grad diff=0.0,PASS
+25,R-dense,Reordering,Reorder Dense fragment rows,Exact loss and gradient,loss diff=0.0; max grad diff=0.0,PASS
+26,B-retain,Semantic boundary/equality,Cross-group/acquisition/source/type/support/lineage retention,Retain all seven evidence units,7/7 retained; 0 removed,PASS
+27,E-missing,Semantic boundary/equality,Same-key missing-aware payload equality,Collapse two rows to one class,1 class retained; 1 row removed,PASS
+28,F-signal,Observation conflict,Matching key with conflicting signal,Reject conflict,Conflict error raised,PASS
+29,F-mask,Observation conflict,Matching key with conflicting validity mask,Reject conflict,Conflict error raised,PASS
+30,L-ambiguous,Emission lineage,Matching content with no emission/session identity,Retain ambiguous rows separately,2/2 evidence classes retained,PASS
+31,same_session_independent_statements_retained_by_default,Lineage policy,Matching statements with shared session and no emission IDs; session scope false,Retain rows separately,2/2 evidence classes retained,PASS
+32,same_session_explicit_session_scope_collapses,Lineage policy,Matching statements with shared session and no emission IDs; session scope true,Collapse repeated materializations,1 class retained; 1 row removed,PASS

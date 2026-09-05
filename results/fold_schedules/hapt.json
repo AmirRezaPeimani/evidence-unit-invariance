@@ -1,0 +1,45 @@
+{
+  "folds": [
+    [
+      "subject_01",
+      "subject_06",
+      "subject_11",
+      "subject_16",
+      "subject_21",
+      "subject_26"
+    ],
+    [
+      "subject_02",
+      "subject_07",
+      "subject_12",
+      "subject_17",
+      "subject_22",
+      "subject_27"
+    ],
+    [
+      "subject_03",
+      "subject_08",
+      "subject_13",
+      "subject_18",
+      "subject_23",
+      "subject_28"
+    ],
+    [
+      "subject_04",
+      "subject_09",
+      "subject_14",
+      "subject_19",
+      "subject_24",
+      "subject_29"
+    ],
+    [
+      "subject_05",
+      "subject_10",
+      "subject_15",
+      "subject_20",
+      "subject_25",
+      "subject_30"
+    ]
+  ],
+  "identity_groups": 30
+}

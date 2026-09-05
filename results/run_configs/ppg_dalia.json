@@ -1,0 +1,40 @@
+{
+  "clean_evidence_classes": 60,
+  "clean_serialized_rows": 60,
+  "conditions": [
+    "clean",
+    "five_copy_range_materialization"
+  ],
+  "dataset": "ppg_dalia",
+  "decoder": {
+    "merge_gap_bins": 0,
+    "minimum_duration_bins": 1,
+    "threshold": 0.5
+  },
+  "explicit_emission_identity": true,
+  "fitted_runs": 270,
+  "independent_groups": 15,
+  "learning_rate": 0.01,
+  "materialized_evidence_classes": 60,
+  "materialized_serialized_rows": 180,
+  "maximum_epochs": 25,
+  "model_seeds": [
+    1103,
+    2207,
+    3301
+  ],
+  "qualified_maximum_cardinality_segment_matching": true,
+  "raw_data_redistributed": false,
+  "representation_copies_inherit_parent_identity": true,
+  "schema_version": "evidence_unit_run_configuration_v1",
+  "selection": "weak validation only",
+  "task": {
+    "bin_seconds": 5.0,
+    "features": "twelve fixed multimodal summaries",
+    "mean_truth_duration_seconds": 552.67,
+    "median_truth_duration_seconds": null,
+    "positive_frame_prevalence": 0.1231,
+    "positive_target": "activity IDs 2 (stairs) or 7 (walking)",
+    "truth_components": 30
+  }
+}

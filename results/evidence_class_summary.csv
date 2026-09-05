@@ -1,0 +1,15 @@
+dataset,condition,serialized_rows,evidence_classes,rows_removed,affected_acquisitions,maximum_class_size,class_size_distribution,first_seen_order_matches_canonical_order
+hapt,clean,1344,1344,0,0,1,"{""1"": 1344}",False
+hapt,five_copy_range_materialization,2148,1344,804,169,5,"{""1"": 1143, ""5"": 201}",False
+mhealth,clean,284,284,0,0,1,"{""1"": 284}",False
+mhealth,five_copy_range_materialization,584,284,300,66,5,"{""1"": 209, ""5"": 75}",False
+synthetic,clean,412,412,0,0,1,"{""1"": 412}",False
+synthetic,five_copy_range_materialization,716,412,304,61,5,"{""1"": 336, ""5"": 76}",False
+daphnet,clean,286,286,0,0,1,"{""1"": 286}",True
+daphnet,five_copy_range_materialization,562,286,276,69,5,"{""1"": 217, ""5"": 69}",True
+harth,clean,2102,2102,0,0,1,"{""1"": 2102}",True
+harth,five_copy_range_materialization,4206,2102,2104,526,5,"{""1"": 1576, ""5"": 526}",True
+har70,clean,754,754,0,0,1,"{""1"": 754}",True
+har70,five_copy_range_materialization,2050,754,1296,324,5,"{""1"": 430, ""5"": 324}",True
+ppg_dalia,clean,60,60,0,0,1,"{""1"": 60}",False
+ppg_dalia,five_copy_range_materialization,180,60,120,15,5,"{""1"": 30, ""5"": 30}",False

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:iclr2027:evidence-unit-invariance:evidence-unit-schema",
+  "title": "Serialized weak-evidence row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "row_id",
+    "group_id",
+    "acquisition_id",
+    "source_id",
+    "annotation_type",
+    "support",
+    "payload",
+    "signal",
+    "validity_mask"
+  ],
+  "properties": {
+    "row_id": {"type": "string", "minLength": 1},
+    "group_id": {"type": "string", "minLength": 1},
+    "acquisition_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "annotation_type": {
+      "enum": [
+        "negative",
+        "positive_bag",
+        "timestamp",
+        "range",
+        "dense_fragment"
+      ]
+    },
+    "support": {
+      "type": "array",
+      "items": {"type": "integer", "minimum": 0},
+      "uniqueItems": true
+    },
+    "payload": {"type": "object"},
+    "signal": {
+      "description": "Inline signal array or an immutable content-addressed payload reference.",
+      "oneOf": [
+        {"type": "array"},
+        {
+          "type": "object",
+          "required": ["sha256", "shape"],
+          "properties": {
+            "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "shape": {
+              "type": "array",
+              "items": {"type": "integer", "minimum": 1}
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "validity_mask": {
+      "description": "Inline Boolean mask or an immutable content-addressed mask reference.",
+      "oneOf": [
+        {"type": "array"},
+        {
+          "type": "object",
+          "required": ["sha256", "shape"],
+          "properties": {
+            "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            "shape": {
+              "type": "array",
+              "items": {"type": "integer", "minimum": 1}
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "evidence_emission_id": {
+      "type": ["string", "null"],
+      "description": "Statement-level lineage identity for an independent annotation emission. When present, it takes precedence over annotation_session_id."
+    },
+    "annotation_session_id": {
+      "type": ["string", "null"],
+      "description": "Identity for the annotation session that produced the row. This field is not evidence identity unless session_id_is_evidence_unit is true."
+    },
+    "session_id_is_evidence_unit": {
+      "type": "boolean",
+      "default": false,
+      "description": "Explicitly declares session identity as evidence identity when statement-level emission lineage is absent. The safe default is false."
+    }
+  }
+}

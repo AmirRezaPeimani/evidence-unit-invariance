@@ -1,0 +1,25 @@
+{
+  "folds": [
+    [
+      "subject_01",
+      "subject_06"
+    ],
+    [
+      "subject_02",
+      "subject_07"
+    ],
+    [
+      "subject_03",
+      "subject_08"
+    ],
+    [
+      "subject_04",
+      "subject_09"
+    ],
+    [
+      "subject_05",
+      "subject_10"
+    ]
+  ],
+  "identity_groups": 10
+}

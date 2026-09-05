@@ -1,0 +1,40 @@
+{
+  "clean_evidence_classes": 284,
+  "clean_serialized_rows": 284,
+  "conditions": [
+    "clean",
+    "five_copy_range_materialization"
+  ],
+  "dataset": "mhealth",
+  "decoder": {
+    "merge_gap_bins": 0,
+    "minimum_duration_bins": 1,
+    "threshold": 0.5
+  },
+  "explicit_emission_identity": true,
+  "fitted_runs": 150,
+  "independent_groups": 10,
+  "learning_rate": 0.01,
+  "materialized_evidence_classes": 284,
+  "materialized_serialized_rows": 584,
+  "maximum_epochs": 25,
+  "model_seeds": [
+    1103,
+    2207,
+    3301
+  ],
+  "qualified_maximum_cardinality_segment_matching": true,
+  "raw_data_redistributed": false,
+  "representation_copies_inherit_parent_identity": true,
+  "schema_version": "evidence_unit_run_configuration_v1",
+  "selection": "weak validation only",
+  "task": {
+    "bin_seconds": 2.0,
+    "features": "mean and standard deviation of 23 channels",
+    "mean_truth_duration_seconds": 44.74,
+    "median_truth_duration_seconds": 56.0,
+    "positive_frame_prevalence": 0.3348,
+    "positive_target": "official activity label greater than zero",
+    "truth_components": 272
+  }
+}
